@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2024/09/25 15:49:34.896,=C:\Users\victoria\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2024/09/25 15:51:07.294,C:\Users\victoria\Desktop\Delphi\Exercicio01\frmPrincipal.dfm=C:\Users\victoria\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2024/09/25 15:51:07.294,C:\Users\victoria\Desktop\Delphi\Exercicio01\frmPrincipal.pas=C:\Users\victoria\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2024/09/25 15:51:34.710,C:\Users\victoria\Desktop\Delphi\Exercicio01\FormularioLogin.dproj=C:\Users\victoria\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>2024/09/25 16:25:42.659,=C:\Users\victoria\Desktop\Delphi\Exercicio01\Unit1.pas</Transaction>
+    <Transaction>2024/09/25 17:38:19.705,C:\Users\victoria\Desktop\Delphi\Exercicio01\frmSecundario.pas=C:\Users\victoria\Desktop\Delphi\Exercicio01\Unit1.pas</Transaction>
+    <Transaction>2024/09/25 17:38:19.705,C:\Users\victoria\Desktop\Delphi\Exercicio01\frmSecundario.dfm=C:\Users\victoria\Desktop\Delphi\Exercicio01\Unit1.dfm</Transaction>
+    <Transaction>2024/09/25 17:47:44.958,C:\Users\victoria\Desktop\Delphi\Exercicio01\frmPrincipal.pas=</Transaction>
+  </Transactions>
+  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="frmSecundario.pas"/>
+    <File Path="frmSecundario.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

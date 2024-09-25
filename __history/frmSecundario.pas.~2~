@@ -1,0 +1,69 @@
+unit frmSecundario;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls,
+  Vcl.Imaging.jpeg, Vcl.Imaging.pngimage;
+
+type
+  TForm1 = class(TForm)
+    Panel1: TPanel;
+    Edit2: TEdit; // Nome/Caminho da Base de Dados
+    Edit3: TEdit; // Porta
+    Edit4: TEdit; // Nome do Servidor
+    Edit5: TEdit; // Usuário
+    Edit6: TEdit; // Senha
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Button1: TButton; // Botão Confirmar
+    Image1: TImage;
+    Label6: TLabel;
+    Image2: TImage;
+    Label7: TLabel;
+    procedure Button1Click(Sender: TObject); // Adicionando o evento do botão
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  dbPath, port, server, user, password: string;
+  connectionString: string;
+begin
+  // Pegando os valores dos campos de entrada
+  dbPath := Edit2.Text;     // Nome/Caminho da Base de Dados
+  port := Edit3.Text;       // Porta
+  server := Edit4.Text;     // Nome do Servidor
+  user := Edit5.Text;       // Usuário
+  password := Edit6.Text;   // Senha
+
+  // Verifica se todos os campos foram preenchidos
+  if (dbPath = '') or (port = '') or (server = '') or (user = '') or (password = '') then
+  begin
+    ShowMessage('Todos os campos devem ser preenchidos!');  // Mensagem de erro
+    Exit;
+  end;
+
+  // Concatena a string de conexão no formato requisitado
+  connectionString := Format('jdbc:%s:%s@%s/%s:%s', [user, password, dbPath, server, port]);
+
+  // Exibe a string de conexão
+  ShowMessage('OK. Conexão: ' + connectionString);
+end;
+
+end.
+
